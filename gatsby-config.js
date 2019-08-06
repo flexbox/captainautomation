@@ -22,12 +22,12 @@ module.exports = {
     description: `My site description...`,
     social: [
       {
-        name: `twitter`,
+        name: `Twitter`,
         url: `https://twitter.com/flexbox_`,
       },
       {
-        name: `github`,
-        url: `https://github.com/gatsbyjs`,
+        name: `Instagram`,
+        url: `https://instagram.com/captainautomation/`,
       },
     ],
   },
