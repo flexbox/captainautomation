@@ -10,7 +10,7 @@ module.exports = {
   siteMetadata: {
     title: `Captain Automation`,
     author: `David Leuliette`,
-    description: `My site description...`,
+    description: `Manual Work is a Bug. Always be automating, change your mindset and achieve more in less time.`,
     social: [
       {
         name: `Twitter`,
