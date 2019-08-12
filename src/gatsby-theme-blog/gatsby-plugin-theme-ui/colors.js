@@ -8,18 +8,20 @@ import defaultThemeColors from "gatsby-theme-blog/src/gatsby-plugin-theme-ui/col
  */
 
 const lightBlue = `#3525e6`
+const blue = `#40C3F7`
 const blueGray = `#c4c6ff`
 const black = `#102a43`
+const grayDarker = `#102A43`
 
 export default merge(defaultThemeColors, {
   text: black,
   primary: lightBlue,
   heading: blueGray,
-  // modes: {
-  //   dark: {
-  //     background: blueGray,
-  //     primary: lightBlue,
-  //     highlight: lightBlue,
-  //   },
-  // },
+  modes: {
+    dark: {
+      background: grayDarker,
+      primary: blue,
+      highlight: lightBlue,
+    },
+  },
 })
