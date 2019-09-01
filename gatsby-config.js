@@ -1,16 +1,16 @@
 module.exports = {
-  plugins: [
-    "gatsby-theme-mdx-deck",
-    {
-      resolve: `gatsby-theme-blog`,
-      options: {},
-    },
-  ],
-  // Customize your site metadata:
   siteMetadata: {
     title: `Captain Automation`,
-    author: `David Leuliette`,
+    name: `David Leuliette`,
+    siteUrl: `https://captainautomation.xyz`,
     description: `Manual Work is a Bug. Always be automating, change your mindset and achieve more in less time.`,
+    author: `David leuliette`,
+
+    // important to set the main text that appears in the hero
+    hero: {
+      heading: `Perspectives on technology, design and business from the team at Narative.`,
+      maxWidth: 652,
+    },
     social: [
       {
         name: `Twitter`,
@@ -22,4 +22,16 @@ module.exports = {
       },
     ],
   },
-}
+  plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/pages/`,
+      },
+    },
+    `gatsby-plugin-mdx`,
+    'gatsby-plugin-theme-ui',
+    'gatsby-theme-mdx-deck',
+  ],
+};
